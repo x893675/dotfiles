@@ -7,8 +7,9 @@ if [[ ! -d ~/.oh-my-zsh ]]; then
 fi
 
 cp -v alias.zsh ~/.alias
-cp -v bullet-train.zsh-theme ~/.oh-my-zsh/themes
+cp -v bullet-train.zsh-theme ~/.oh-my-zsh/themes/
 cp -v zshrc ~/.zshrc
+sed -i "s/\(ZSH_THEME=\)\S*/\1\"bullet-train\"/"  ~/.zshrc
 
 chsh -s `which zsh`
 
