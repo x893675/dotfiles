@@ -1,16 +1,13 @@
-#!/bin/zsh
-yum install zsh -y
+#install dependency
 
-if [[ ! -d ~/.oh-my-zsh ]]; then
-    echo "Install oh-my-zsh ..."
-    sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-fi
+brew install exa coreutils fzf
 
-cp -v alias.zsh ~/.alias
-cp -v bullet-train.zsh-theme ~/.oh-my-zsh/themes/
-cp -v zshrc ~/.zshrc
-sed -i "s/\(ZSH_THEME=\)\S*/\1\"bullet-train\"/"  ~/.zshrc
+#install zinit
 
-chsh -s `which zsh`
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 
-source ~/.zshrc
+#setting
+
+cp zshrc ~/.zshrc
+
+mkdir -pv ~/.config/zsh && cp -rf config/*.zsh ~/.config/zsh/
