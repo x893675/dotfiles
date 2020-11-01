@@ -1,9 +1,14 @@
 ## zsh setting for OSX
 
-### install dependency
+### dependency
 
-`brew install exa coreutils fzf`
+* brew
+* exa
+* coreutils
+* fzf
+* zinit
+* zsh
 
-### install zinit
+### install
 
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"`
+`bash setup.sh`
