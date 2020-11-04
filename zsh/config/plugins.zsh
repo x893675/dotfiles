@@ -7,8 +7,8 @@ zinit ice wait lucid
 zinit light zsh-users/zsh-history-substring-search
 
 # pure prompt
-zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-zinit light sindresorhus/pure
+#zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+#zinit light sindresorhus/pure
 
 # prepend sudo when pressing esc
 zinit ice wait lucid

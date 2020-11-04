@@ -9,7 +9,7 @@
 #   ░░     ░░░░░░░░ ░░░    ░░  ░░░░░░░░ ░░░░░   ░░░  ░░░░░░ ░░░░░░  
 
 
-export PATH=$PATH:/usr/local/bin:/usr/local/go/bin:/Users/hanamichi/go/bin:/Users/hanamichi/.cargo/bin:/Users/hanamichi/.kubebuilder/bin
+export PATH=/usr/local/bin:/usr/local/go/bin:/Users/hanamichi/go/bin:/Users/hanamichi/.cargo/bin:/Users/hanamichi/.kubebuilder/bin:$PATH
 export LC_ALL=zh_CN.UTF-8
 export LANG=zh_CN.UTF-8
 export LESS="-F -X -R $LESS"

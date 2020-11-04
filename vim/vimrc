@@ -8,6 +8,7 @@
 
 " 关闭兼容模式
 set nocompatible
+set backspace=indent,eol,start
 
 set nu " 设置行号
 set cursorline "突出显示当前行
