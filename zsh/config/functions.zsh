@@ -7,10 +7,11 @@
 #  ░██  ░░██████ ███  ░██░░█████   ░░██ ░██░░██████  ███  ░██ ██████ 
 #  ░░    ░░░░░░ ░░░   ░░  ░░░░░     ░░  ░░  ░░░░░░  ░░░   ░░ ░░░░░░  
 
-pa()
-{
-    curl -F "file=@$1" "https://${PAUSER}:${PAPASS}@paste.arul.io"
-}
+
+# pa()
+#{
+#    curl -F "file=@$1" "https://${PAUSER}:${PAPASS}@paste.arul.io"
+#}
 
 #fzf with preview options
 fzfp()
@@ -22,16 +23,16 @@ fzfp()
 }
 
 #quick lookup for my config files
-dots()
-{
-    find ~/dotfiles/ -type f | awk '!/git|netr|plugged|autoload|.DS_Store/ && gsub("//", "/")' | fzfp | xargs $EDITOR;
-}
+#dots()
+#{
+#    find ~/dotfiles/ -type f | awk '!/git|netr|plugged|autoload|.DS_Store/ && gsub("//", "/")' | fzfp | xargs $EDITOR;
+#}
 
 #show me what my key config looks like - pressing enter goes to that command in the config
-keys()
-{
-    awk '/^[a-zA-Z]/ && last {print $0,"\t",last} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc | column -t -s $'\t' | fzf --reverse | awk -F\# '{print $1}' | sed -e "s/ *$//" | xargs -I cmd nvim +/cmd ~/.config/sxhkd/sxhkdrc;
-}
+#keys()
+#{
+#    awk '/^[a-zA-Z]/ && last {print $0,"\t",last} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc | column -t -s $'\t' | fzf --reverse | awk -F\# '{print $1}' | sed -e "s/ *$//" | xargs -I cmd nvim +/cmd ~/.config/sxhkd/sxhkdrc;
+#}
 
 hex2dec()
 {
@@ -78,13 +79,13 @@ swap()
     mv "$1" $TMPFILE && mv "$2" "$1" && mv $TMPFILE "$2"
 }
 
-comp()
-{
-    [ -f "a.out" ] && rm a.out
-    g++ -std=c++2a $1
-    ./a.out
-    rm a.out
-}
+# comp()
+#{
+#    [ -f "a.out" ] && rm a.out
+#    g++ -std=c++2a $1
+#    ./a.out
+#    rm a.out
+#}
 
 mkcd()
 {
