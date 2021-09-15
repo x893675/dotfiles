@@ -11,7 +11,7 @@
 
 ### 安装
 
-* 复制 vimrc，重启后执行 `:PluginInstall`
+* 复制 vimrc，重启后执行 `:PlugInstall`
 * ycm安装完成后会报错
 * `cd ~/.vim/plugged/YouCompleteMe/`
 * `python3 install.py --go-completer`
