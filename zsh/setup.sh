@@ -1,10 +1,10 @@
 #install dependency
 
-brew install exa coreutils fzf
+brew install eza coreutils fzf
 
 #install zinit
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 #setting
 

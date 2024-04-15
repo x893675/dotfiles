@@ -3,7 +3,7 @@
 ### dependency
 
 * brew
-* exa
+* eza
 * coreutils
 * fzf
 * zinit

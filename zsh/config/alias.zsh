@@ -14,22 +14,11 @@
 
 alias q='exit 0'
 
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -la'
-alias l.='exa -ld .*'
-
-if [ -x "$(command -v exa)" ]; then
-    alias ls='exa'
-    alias la='exa -a'
-    alias ll='exa -la'
-    alias l.='exa -ld .*'
-else
-    alias ls='ls --color=auto'
-    echo "not found"
-    alias la='ls -a'
-    alias ll='ls -lha'
-fi
+alias ls='eza'
+alias la='eza -a'
+alias ll='eza -la'
+alias l.='eza -ld .*'
+alias lgit='eza -l --git -T --hyperlink --header'
 
 alias mkdir='mkdir -pv'
 alias grep='grep --color=auto'
